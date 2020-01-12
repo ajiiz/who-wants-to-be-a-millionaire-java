@@ -1,0 +1,36 @@
+W ktorym miescie powstala w 1994 r. pierwsza na swiecie kafejka internetowa?
+A)Nowy Jork
+B)Genewa
+C)Los Angeles
+D)Londyn
+3
+W jaki sposob sa konfigurowane napedy twardych dyskow i CD-ROM jako napedy nadrzedny i podrzedny?
+A)W pamieci CMOS
+B)Podczas partycjonowania
+C)Poprzez ustawienie zworek
+D)Podczas formatowania
+2
+Jakiego napiecia zasilajacego wymagaja silniki twardych dyskow?
+A)3,3V
+B)5V
+C)12V
+D)120V
+2
+Jaki bedzie wynik operacji mnozenia liczb 5/8 i -(5/8) w systemie binarnym(ZM)?
+A)1.0,011001
+B)0.0,011001
+C)1.0,010111
+D)1.0,100111
+0
+Jaki bedzie wynik operacji mnozenia liczb 7/8 i -(3/8) w systemie binarnym(ZM)?
+A)0.1,101010
+B)0.0,011110
+C)0.0,010101
+D)1.0,010101
+2
+Jaki bedzie wynik operacji mnozenia liczb 5/8 i 3/4 w systemie binarnym?
+A)0.0,01001
+B)0.0,01111
+C)1.0,10011
+D)0.0,10100
+1

@@ -1,0 +1,72 @@
+Jakim systemem liczbowym posluguje sie komputer?
+A)Systemem dwojkowym
+B)Systemem dziesietnym
+C)Systemem trojkowym
+D)Systemem dwunastkowym
+0
+Przycisku "Reset" - uzywamy wtedy, gdy chcemy:
+A)Wylaczyc komputer
+B)Ponownie uruchomic komputer
+C)Gdy komputer nie reaguje na nasze polecenia
+D)Wyczyscic pamiec podreczna komputera
+1
+Ktore z wymienionych urzadzen, jest urzadzeniem wejscia?
+A)Mikrofon
+B)Monitor
+C)Drukarka
+D)Glosnik
+0
+Co to jest software?
+A)Sprzet komputerowy
+B)Darmowy system operacyjny
+C)Rodzaj wirusa komputerowego
+D)Oprogramowanie komputerowe
+3
+Ktora z wymienionych pamieci jest pamiecia wenetrzna komputera?
+A)Dysk Twardy
+B)CD-ROM
+C)Pendrive
+D)ROM
+0
+Ktory z wymienionych programow jest programem antywirusowym?
+A)Firefox
+B)Norton Ghost
+C)CCleaner
+D)AVG
+3
+Martwy piksel to punkt pozostajacy niezmiennie w kolorze?
+A)Zoltym
+B)Szarym
+C)Czarnym
+D)Bialym
+2
+Liczby z jakiego zakresu uzywane sa w zapisie adresu IPv4?
+A)0-255
+B)10-100
+C)-128-128
+D)0-254
+0
+Co jest wynikiem nieprawidlowego podlaczenia diody LED do plyty glownej?
+A)Plyta glowna bedzie miala zwarcie
+B)Dioda LED bedzie swiecic
+C)Dioda LED nie bedzie swiecic
+D)Komputer bedzie buczal po wlaczeniu zasilania
+2
+Jaki rodzaj pradu moze Cie zabic?
+A)Zmienny
+B)Staly
+C)Napiecie zabija, prad jest tylko miernikiem
+D)Zmienny i staly
+3
+Jaki jest cel stosowania radiatora?
+A)Do chlodzenia procesora
+B)Do ustawienia napiecia procesora
+C)Do ustawienia szybkosci procesora
+D)Do uziemienia procesora
+0
+Jakiego koloru jest przewod uziemiajacy w zasilaczu komputerowym?
+A)Czerwony
+B)Czarny
+C)Zolty
+D)Niebieski
+2

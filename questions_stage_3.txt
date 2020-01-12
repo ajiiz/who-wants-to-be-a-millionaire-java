@@ -1,0 +1,18 @@
+Jakim systemem liczbowym posluguje sie komputer?
+A)Systemem dwojkowym
+B)Systemem dziesietnym
+C)Systemem trojkowym
+D)Systemem dwunastkowym
+0
+Przycisku "Reset" - uzywamy wtedy, gdy chcemy:
+A)Wylaczyc komputer
+B)Ponownie uruchomic komputer
+C)Gdy komputer nie reaguje na nasze polecenia
+D)Wyczyscic pamiec podreczna komputera
+1
+Ktore z wymienionych urzadzen, jest urzadzeniem wejscia?
+A)Mikrofon
+B)Monitor
+C)Drukarka
+D)Glosnik
+0
