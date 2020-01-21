@@ -1,6 +1,7 @@
 package com.mycompany.milionerze_it_version;
 import java.io.File;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +17,7 @@ public class Game {
     private static int stage;
     private static long result;
     private static int round;
-    private String name;
+    private static String name;
     private static boolean usedLifeRing;
     private static boolean usedFiftyFifty;
     private static boolean usedCallFriend;
@@ -54,6 +55,7 @@ public class Game {
                 break;
             }
             else if("Nie".equals(answerRules)) break;
+            System.out.println("Podaj poprawna odpowiedz");
         }
         System.out.println("Rozpoczynamy rozgrywke, powodzenia "+this.name+"!");
         
@@ -74,7 +76,7 @@ public class Game {
             announceResult(result);
             return false;
         }
-
+        delay();
         System.out.println("Pytanie brzmi:");
         System.out.print(Game.round+1+".");
         showQuestion(list);
@@ -215,14 +217,43 @@ public class Game {
                         break;
                     }
                 }
-            default:
-                System.out.println("Nie ma takiej opcji!");
         }
         return true;
+    }
+    //Metoda umozliwiajca zapis wyniku w rankingu DOKONCZYC!
+    static void saveResult(long result){
+        File file = new File("ranking.txt");
+        try{
+            Scanner save = new Scanner(file);
+            RandomAccessFile raf = new RandomAccessFile("ranking.txt","rw");
+            raf.seek(raf.length()+1);
+            raf.writeUTF(Game.name +" "+ result);
+            raf.close();
+            System.out.println("Zapisano twoj wynik!");
+        }catch(IOException e){
+            System.out.println("Blad pliku!");
+            delay();
+            System.out.println(e);
+        }
     }
     //Metoda pokazujaca koncowy wynik
     static void announceResult(long result){
         System.out.println("Osiagnieto wynik: "+result+" zl");
+        System.out.println("Czy chcialbys zapisac swoj wynik?Tak/Nie");
+        String ans = "";
+        Scanner sc = new Scanner(System.in);
+        while(true){
+            try{
+                ans = sc.next();
+            }catch(Exception e){
+                System.out.println("Nie ma takiej odpowiedzi");
+                sc.next();
+            }
+            if(ans.equals("Tak")){
+                saveResult(result);
+                break;
+            } else if(ans.equals("Nie"))break;
+        }
         System.out.println("Powodzenia w kolejnych grach!");
     }
     //Metoda zwracajaca poprawna odpowiedz w charze
