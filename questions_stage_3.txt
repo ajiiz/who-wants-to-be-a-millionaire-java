@@ -1,18 +1,36 @@
-Jakim systemem liczbowym posluguje sie komputer?
-A)Systemem dwojkowym
-B)Systemem dziesietnym
-C)Systemem trojkowym
-D)Systemem dwunastkowym
+Jak nazywal sie pierwszy komputer
+A)Atansoff-Berry ABC
+B)ENIAC
+C)Colossus
+D)Maszyna Zusego Z3
 0
-Przycisku "Reset" - uzywamy wtedy, gdy chcemy:
-A)Wylaczyc komputer
-B)Ponownie uruchomic komputer
-C)Gdy komputer nie reaguje na nasze polecenia
-D)Wyczyscic pamiec podreczna komputera
+Tekst "lorem ipsum dolor sit amet" uzywany jest do demonstracji wygladu tekstu.Skad pochodzi?
+A)to poczatki ksiegi rodzaju
+B)to przyslowie rzymskie
+C)to poczatek kostytucji lex de imperio Vespasiani
+D)To znieksztalcony fragment Cycerona
+3
+Czas uniksowy nie uwzglednia przestepnych...?
+A)Lat
+B)Godzin
+C)Minut
+D)Sekund
+3
+Rodzina systemow UNIX zostala zapoczatkowana przez?
+A)Steve'a Jobsa i Steve'a Wozniaka
+B)Dennisa Ritchie i Kena Thompsona
+C)Billa Gatesa i Paula Allena
+D)Linusa Thorvaldsa
 1
-Ktore z wymienionych urzadzen, jest urzadzeniem wejscia?
-A)Mikrofon
-B)Monitor
-C)Drukarka
-D)Glosnik
+Autorem najwiekszego wlamania do wojskowych systemow komputerowych jest?
+A)Gary McKinnon
+B)Steven Raymond
+C)Kevin Paulsen
+D)Chris Zboralski
+0
+W jakiej firmie Steve Jobs podpatrzyl graficzny interfejs uzytkownika z myszka?
+A)Xerox
+B)Microsoft
+C)Amiga
+D)IBM
 0

@@ -1,7 +1,12 @@
 package com.mycompany.milionerze_it_version;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.io.RandomAccessFile;
+import java.io.StringWriter;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,8 +39,8 @@ public class Game {
         Game.round = 0;
         //Odczytanie pytan z plikow i przypisanie ich do list
         loadQuestions("questions_stage_1.txt",Game.questions_stage_1);
-        loadQuestions("questions_stage_1.txt",Game.questions_stage_2);
-        loadQuestions("questions_stage_1.txt",Game.questions_stage_3);
+        loadQuestions("questions_stage_2.txt",Game.questions_stage_2);
+        loadQuestions("questions_stage_3.txt",Game.questions_stage_3);
         
         //Pomieszanie pytan, aby sie nie powtarzaly
         Collections.shuffle(Game.questions_stage_1);
@@ -65,14 +70,18 @@ public class Game {
         Game.result = Game.moneyArr[round];
         Scanner scan = new Scanner(System.in);
         int option;
-        List<Question> list = Game.questions_stage_1;
-        
-        if(Game.result >= 5000 && Game.result <125000) Game.stage=2;
-        if(Game.result>=125000) Game.stage=3;
-        if(Game.stage == 2)list = Game.questions_stage_2;
-        else if(Game.stage == 3)list = Game.questions_stage_3;
-        
+        List<Question> list = null;
+        if(Game.result <5000) list = Game.questions_stage_1;
+        else if(Game.result >= 5000 && Game.result < 125000){
+            list = Game.questions_stage_2;
+            Game.stage = 2;
+        }
+        else if(Game.result>=125000){
+            list = Game.questions_stage_3;
+            Game.stage = 3;
+        }
         if(Game.result == 1000000){
+            System.out.println("Gratulacje, wygrales milion!");
             announceResult(result);
             return false;
         }
@@ -127,8 +136,8 @@ public class Game {
                     } else {
                         System.out.println("Niestety to nie jest poprawna odpowiedz.");
                         System.out.println("Poprawna odpowiedzia bylo: "+getCorrectAnswerChar(list));
+                        Game.result = 0;
                         announceResult(Game.result);
-
                         return false;
                     }
                 break;
@@ -220,15 +229,13 @@ public class Game {
         }
         return true;
     }
-    //Metoda umozliwiajca zapis wyniku w rankingu DOKONCZYC!
+    //Metoda umozliwiajca zapis wyniku w rankingu
     static void saveResult(long result){
         File file = new File("ranking.txt");
         try{
-            Scanner save = new Scanner(file);
-            RandomAccessFile raf = new RandomAccessFile("ranking.txt","rw");
-            raf.seek(raf.length()+1);
-            raf.writeUTF(Game.name +" "+ result);
-            raf.close();
+            BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
+            out.append("\n"+Game.name+" "+result);
+            out.close();
             System.out.println("Zapisano twoj wynik!");
         }catch(IOException e){
             System.out.println("Blad pliku!");
@@ -319,7 +326,10 @@ public class Game {
         }
         if(percentCorrect>percentIncorrect) answer = list.get(0).getCorrectAnswer().charAt(0);
         else answer = list.get(0).getRandomAnswer();
-        System.out.println("Wydaje mi sie, ze poprawna odpowiedz to "+answer);
+        System.out.println("Dzwonienie...");
+        delay();
+        System.out.println("Czesc, "
+                + "wydaje mi sie, ze poprawna odpowiedz to "+answer);
     }
     
     //Metoda usuwajaca pytanie z listy, aby sie nie powtarzalo
@@ -364,13 +374,13 @@ public class Game {
     //Metoda wyswietlajaca zasady gry
     static void showRules(){
         System.out.println("Zasady:");
-        System.out.println("Odpowiadasz na zadane pytania,");
-        System.out.println("za poprawna odpowiedz dostaniesz okreslona ilosc pieniedzy");
-        System.out.println("Widok stanu konta bedzie dostepny w kazdym momencie");
-        System.out.println("Posiadasz 3 kola ratunkowe z ktorych mozesz skorzystac po jedynm razie z kazdego");
-        System.out.println("Mozesz skorzystac tylko z jednego kola ratunkowego przy jednym pytaniu");
-        System.out.println("Bedziesz mogl zakonczyc gre w kazdym momencie, zabierajac uzbierana sume");
-        System.out.println("Jesli jednak odpowiesz niepoprawnie na pytanie to stracisz wszystko");
+        System.out.println("1.Musisz odpowiedziec poprawnie na zadane pytanie");
+        System.out.println("2.Za poprawna odpowiedz dostaniesz okreslona kwote, zaleznie od etapu rozgrywki");
+        System.out.println("3.Posiadasz 3 kola ratunkowe z ktorych mozesz skorzystac po jedynm razie z kazdego");
+        System.out.println("4.Mozesz skorzystac tylko z jednego kola ratunkowego przy jednym pytaniu");
+        System.out.println("5.Mozesz zakonczyc gre i zabrac pieniadze w kazdym momencie rozgrywki");
+        System.out.println("6.Niepoprawna odpowiedz skutuje przegrana i strata wszystkich pieniedzy");
+        delay();
     }
     
     //Metoda delay

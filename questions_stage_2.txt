@@ -34,3 +34,57 @@ B)0.0,01111
 C)1.0,10011
 D)0.0,10100
 1
+Jak zmarl Alan Turing?
+A)Zawal serca
+B)Samobojstwo
+C)Zostal postrzelony
+D)W wypadku samochodowym
+1
+Co to ONP?
+A)Organ Nazewnictwa Praktycznego
+B)Odmienna Notacja Polska
+C)Odwrotna Notacja Polska
+D)Odwrotna Notacja Poznanska
+2
+Kto wymyslil metode znajdywania najwiekszego wspolnego dzielnika?
+A)Arystoteles
+B)Hipokrates
+C)Euklides
+D)Pitagoras
+2
+Ktora duza firma amerykanska z sektora IT nie ma glownej siedziby w Dolinie Krzemowej?
+A)IBM
+B)AMD
+C)Google
+D)Apple
+0
+Skad pochodzi znak pisarski @(malpa)?
+A)Z jezyka arabskiego
+B)Z jezyka greckiego
+C)Z jezyka lacinskiego
+D)Stworzono ten symbol na potrzeby email'i
+2
+Trackball to inaczej?
+A)pies
+B)mysz
+C)szczur
+D)kot
+3
+Kto jest prekursorem rzeczywistosci wirtualnej?
+A)Wang Ganchang
+B)Palmer Luckey
+C)Juliusz Verne
+D)Myron Krueger
+3
+Kto jest patrone internautow i informatykow?
+A)Izydor z Sewilli
+B)Leonard z Noblac
+C)Herman z Kolonii
+D)Anatol z Laodycei
+0
+Polecenie md w wierszu polecen systemu Windows sluzy do?
+A)Tworzenia katalogu
+B)Tworzenia pliku
+C)Zmiany nazwy pliku
+D)Przejscia do katalogu nadrzednego
+0
