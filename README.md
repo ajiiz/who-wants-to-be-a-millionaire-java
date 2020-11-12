@@ -1,13 +1,30 @@
-## Who Wants To Be A Millionaire IT version
+# Who Wants To Be A Millionaire IT version
+**Application** was made for University purposes as class project.
+* With a basic menu you can answer questions, check rankings, use lifelines, get your money and end the game.
+* Questions are stored in 3 files, from easy to hard. Questions are in polish and about IT.
 
-Object Oriented Application Game.
+## Table of contents
+* [Status](#status)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [License](#license)
+* [Contact](#contact)
 
-It is a well known basic "Who Wants To Be A Millionaire" television game.
+## Status
+#### Ended
 
-Work your way to the top.
+## Technologies
+#### Project is created with:
+* Java
 
-With a basic menu you can answer questions, check rankings, use lifelines, get your money and end the game.
-  
-Questions are stored in 3 files, from easy to hard. Questions are in polish and about IT.
+## Setup
+* Pull the project from the repository
+```
+git clone https://github.com/ajiiz/who-wants-to-be-a-millionaire-java
+```
 
-Application was made for University purposes as class project.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Contact
+#### Contact me via e-mail: piotrwrobel.ajiiz@gmail.com
